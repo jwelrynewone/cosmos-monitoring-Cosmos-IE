@@ -6,6 +6,7 @@ require (
 	github.com/cosmos/cosmos-sdk v0.41.3
 	github.com/e-money/em-ledger v0.9.4
 	github.com/irisnet/irishub v1.0.1
+	github.com/BitCannaGlobal/testnet-bcna-cosmos v0.testnet6
 	github.com/kava-labs/kava v0.12.2
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/prometheus/client_golang v1.8.0
