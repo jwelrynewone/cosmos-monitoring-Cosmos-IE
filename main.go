@@ -21,7 +21,7 @@ import (
 
 var (
 //        chainList = []string{"cosmos", "terra", "iris", "kava", "iov", "emoney", "band"}
-        chainList = []string{"cosmos", "iris", "bitcanna"}
+        chainList = []string{"cosmos", "iris", "bitcanna-testnet-1"}
 )
 
 
