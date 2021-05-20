@@ -33,6 +33,7 @@ func Start(chain string, log *zap.Logger) {
         }
 
 	// denom gagues
+	denomList[0] = "ubcna"
 	count := 0
 	for i := 0; i < len(denomList)*3; i += 3 {
 
@@ -68,7 +69,7 @@ func Start(chain string, log *zap.Logger) {
 
 			}()
 */
-
+			
 			blockData := rest.GetBlocks(log)
                         currentBlockHeight, _:= strconv.ParseInt(blockData.Block.Header.Height, 10, 64)
 
