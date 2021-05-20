@@ -46,7 +46,7 @@ func setConfig(chain string) {
 
 	switch chain {
 	case "bitcanna":
-		bitcanna.ConfigureBech32Prefix()
+		bitcanna.SetConfig()
 
 	case "iris":
 		iris.ConfigureBech32Prefix()
