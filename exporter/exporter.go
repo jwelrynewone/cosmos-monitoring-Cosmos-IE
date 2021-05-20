@@ -75,7 +75,7 @@ func Start(chain string, log *zap.Logger) {
 			if previousBlockHeight != currentBlockHeight {
 
 				fmt.Println("")
-				log.Info("\t", zap.Bool("Success", true), zap.String("Block Height", fmt.Sprint(currentBlockHeight)), zap.String("Chain", fmt.Sprint(chain)))
+				log.Info("\t", zap.Bool("Success", true), zap.String("Block Height", fmt.Sprint(currentBlockHeight)), zap.String("Blockdata", fmt.Sprint(blockData)))
 				restData := rest.GetData(chain, currentBlockHeight, blockData, denomList[0], log)
 
 				SetMetric(currentBlockHeight, restData, log)
