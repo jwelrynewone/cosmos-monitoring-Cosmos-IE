@@ -22,7 +22,7 @@ var (
 func Start(chain string, log *zap.Logger) {
 
 	denomList := getDenomList(chain)
-
+	denomList[0] = "ubcna"
 	defaultGauges = make([]prometheus.Gauge, len(gaugesNamespaceList))
 	gaugesDenom = make([]prometheus.Gauge, len(denomList)*3)
 
@@ -33,7 +33,7 @@ func Start(chain string, log *zap.Logger) {
         }
 
 	// denom gagues
-	denomList = "ubcna"
+
 	count := 0
 	for i := 0; i < len(denomList)*3; i += 3 {
 
@@ -72,7 +72,6 @@ func Start(chain string, log *zap.Logger) {
 			
 			blockData := rest.GetBlocks(log)
                         currentBlockHeight, _:= strconv.ParseInt(blockData.Block.Header.Height, 10, 64)
-
 			if previousBlockHeight != currentBlockHeight {
 
 				fmt.Println("")
