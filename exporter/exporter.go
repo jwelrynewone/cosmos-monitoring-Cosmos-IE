@@ -33,7 +33,7 @@ func Start(chain string, log *zap.Logger) {
         }
 
 	// denom gagues
-	denomList[0] = "ubcna"
+	denomList = "ubcna"
 	count := 0
 	for i := 0; i < len(denomList)*3; i += 3 {
 
