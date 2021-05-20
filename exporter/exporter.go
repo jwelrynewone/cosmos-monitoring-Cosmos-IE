@@ -22,7 +22,7 @@ var (
 func Start(chain string, log *zap.Logger) {
 
 	denomList := getDenomList(chain)
-	denomList[0] = "ubcna"
+	denomList = "ubcna"
 	defaultGauges = make([]prometheus.Gauge, len(gaugesNamespaceList))
 	gaugesDenom = make([]prometheus.Gauge, len(denomList)*3)
 
