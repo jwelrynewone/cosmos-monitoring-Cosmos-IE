@@ -7,7 +7,7 @@ import (
 
         sdk "github.com/cosmos/cosmos-sdk/types"
 	iris "github.com/irisnet/irishub/address"
-	bitcanna-testnet-1 "github.com/BitCannaGlobal/testnet-bcna-cosmos/app"
+	bitcanna "github.com/BitCannaGlobal/testnet-bcna-cosmos/app"
 
         terra "github.com/terra-project/core/types"
 //	kava "github.com/kava-labs/kava/app"
