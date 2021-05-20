@@ -7,7 +7,7 @@ import (
 
         sdk "github.com/cosmos/cosmos-sdk/types"
 	iris "github.com/irisnet/irishub/address"
-
+	bitcanna "github.com/BitCannaGlobal/testnet-bcna-cosmos/app/"
 
         terra "github.com/terra-project/core/types"
 //	kava "github.com/kava-labs/kava/app"
@@ -45,6 +45,9 @@ func setConfig(chain string) {
 	config := sdk.GetConfig()
 
 	switch chain {
+	case "bitcanna":
+		bitcanna.ConfigureBech32Prefix()
+
 	case "iris":
 		iris.ConfigureBech32Prefix()
 
