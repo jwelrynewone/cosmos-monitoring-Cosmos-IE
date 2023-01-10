@@ -23,10 +23,10 @@ var (
 	chainList []string
 
 	// command로 안 받을 경우 defult 값 지정
-	chain string = "bitcanna-testnet-1"
-        rpcAddr string = "localhost:26657"
-        restAddr string = "localhost:1317"
-	listenPort string = "26661"
+	chain string = "okp4-nemeton-1"
+        rpcAddr string = "localhost:36657"
+        restAddr string = "localhost:1327"
+	listenPort string = "36661"
 
 	operAddr string= ""
 	consHexAddr string = ""
