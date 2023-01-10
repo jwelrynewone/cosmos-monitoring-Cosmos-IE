@@ -7,6 +7,7 @@ require (
 	github.com/e-money/em-ledger v0.9.4
 	github.com/irisnet/irishub v1.0.1
 	github.com/BitCannaGlobal/testnet-bcna-cosmos v0.testnet6
+	https://github.com/okp4/okp4d v3.0.0
 	github.com/kava-labs/kava v0.12.2
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/prometheus/client_golang v1.8.0
